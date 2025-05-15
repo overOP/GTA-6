@@ -5,6 +5,12 @@ import { gsap } from "gsap";
 //import remixicon
 import "remixicon/fonts/remixicon.css";
 
+
+import Img2 from '../public/bg.png'
+import Img3 from '../public/girlbg.png'
+import Img4 from '../public/imag.png'
+import Img5 from '../public/ps5.png'
+import Img6 from '../public/sky.png'
 const App = () => {
   let [showContent, setShowContent] = useState(false);
   //we use GSAP to animate the text
@@ -129,7 +135,7 @@ const App = () => {
             </mask>
           </defs>
           <image
-            href="../public/bg.png"
+            href={Img2}
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -155,11 +161,11 @@ const App = () => {
             <div className="imagesdiv relative overflow-hidden w-full h-screen">
               <img
                 className="sky absolute scale-[1.5] rotate-[-20deg] top-0 left-0 w-full h-full object-cover"
-                src="../public/sky.png"
+                src={Img6}
               />
               <img
                 className="bg absolute scale-[1.8] rotate-[-3deg] top-0 left-0 w-full h-full object-cover"
-                src="../public/bg.png"
+                src={Img2}
               />
               <div className="text text-white flex flex-col gap-3 absolute top-20 left-1/2 -translate-x-1/2  ">
                 <h1 className="text-[12rem] leading-none -ml-40">grand</h1>
@@ -168,7 +174,7 @@ const App = () => {
               </div>
               <img
                 className="girl absolute scale-[0.95] rotate-[-10deg] -bottom-[45%] left-120"
-                src="../public/girlbg.png"
+                src={Img3}
               />
             </div>
             <div className="btmbar text-gray-200 absolute bottom-0 left-0  w-full py-15 px-10 bg-gradient-to-t from-black to-transparent">
@@ -180,7 +186,7 @@ const App = () => {
               </div>
               <img
                 className="absolute h-[55px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                src="../public/ps5.png"
+                src={Img5}
               />
             </div>
           </div>
@@ -189,7 +195,7 @@ const App = () => {
               <div className="limg relative w-1/2 h-full">
                 <img
                   className="absolute scale-[1.2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                  src="../public/imag.png"
+                  src={Img4}
                 />
               </div>
               <div className="rimg">
