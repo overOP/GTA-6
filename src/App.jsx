@@ -13,6 +13,7 @@ import Img6 from '../public/sky.png';
 const App = () => {
   const [showContent, setShowContent] = useState(false);
 
+  //useGSAP Animation to animate SVG
   useGSAP(() => {
     const tl = gsap.timeline();
 
