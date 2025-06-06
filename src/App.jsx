@@ -39,6 +39,7 @@ const App = () => {
     });
   });
 
+  //useGSAP Animation to animate main content
   useGSAP(() => {
     if (!showContent) return;
 
@@ -51,6 +52,7 @@ const App = () => {
       ease: "Expo.easeInOut",
     });
 
+    // Parallax animation
     const main = document.querySelector(".main");
     main?.addEventListener("mousemove", (e) => {
       const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
